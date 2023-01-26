@@ -158,5 +158,11 @@ class RoundRobin:
                 label.pack(side = "left")
             frame2.pack(side = "top")
         frame.pack()
+        P_L = StringVar()
+        P_L = ""
+        for x  in range(len(executed_process)):
+            P_L +="     P"+str(executed_process[x])
+        label = Label(self.window , text =P_L)
+        label.pack()
 if __name__ == "__main__":
     rr = RoundRobin()
